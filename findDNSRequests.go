@@ -41,7 +41,7 @@ func handlePacket(pacote gopacket.Packet) {
 }
 
 func main() {
-	if handle, err := pcap.OpenOffline("D:\\18-07-23_R6-Siege\\pcaps\\02_online_gaming.pcap"); err != nil {
+	if handle, err := pcap.OpenOffline("D:\\pcaps\\02_online_gaming.pcap"); err != nil {
 		panic(err)
 	} else {
 		handle.SetBPFFilter("udp")
